@@ -25,6 +25,7 @@ public class Camera : MonoBehaviour
         {
             this.transform.Rotate(0.05f, 0, 0);
         }
+
         //transform.RotateAround(playerPos,Vector3.up,1);
     }
 }

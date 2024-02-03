@@ -32,7 +32,7 @@ public class UpDown : MonoBehaviour
             }
         }else if (transform.position.y > MaxDown)
         {
-            transform.position += new Vector3(0, -0.01f, 0);
+            transform.position += new Vector3(0, -1f, 0);
         }
     }
 }

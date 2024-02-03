@@ -27,19 +27,19 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W))
         {
-           transform.position+=transform.forward*0.0075f;;
+           transform.position+=transform.forward*0.2f;;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= transform.forward * 0.0075f; ;
+            transform.position -= transform.forward * 0.2f; ;
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Rotate(0,-0.1f,0);
+            this.transform.Rotate(0,-2.5f,0);
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.Rotate(0, 0.1f, 0);
+            this.transform.Rotate(0, 2.5f, 0);
         }
     }
 

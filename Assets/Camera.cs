@@ -19,11 +19,11 @@ public class Camera : MonoBehaviour
         Vector3 playerPos = Player.transform.position;
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            this.transform.Rotate(-0.05f, 0, 0);
+            this.transform.Rotate(-1f, 0, 0);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            this.transform.Rotate(0.05f, 0, 0);
+            this.transform.Rotate(1f, 0, 0);
         }
 
         //transform.RotateAround(playerPos,Vector3.up,1);

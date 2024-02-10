@@ -28,7 +28,7 @@ public class UpDown : MonoBehaviour
         {
             if (transform.position.y < MaxUp)
             {
-                transform.position += new Vector3(0, 0.01f, 0);
+                transform.position += new Vector3(0, 0.1f, 0);
             }
         }else if (transform.position.y > MaxDown)
         {

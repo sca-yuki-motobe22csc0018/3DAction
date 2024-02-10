@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField] private int count;
+    public AudioSource a;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         count=0;
+        a=GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class Player : MonoBehaviour
             {
                 rb.velocity = Vector3.up * 20;
                 count += 1;
+                a.Play();
             }
         }
         if (Input.GetKey(KeyCode.W))
